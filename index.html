@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cartões Numerados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Cartões Numerados</h1>
+        <div class="inputs">
+            <input type="number" id="start" placeholder="Número Inicial">
+            <input type="number" id="end" placeholder="Número Final">
+            <button onclick="generateCards()">Gerar Cartões</button>
+            <button onclick="printPage()">Imprimir</button>
+        </div>
+        <div id="grid" class="grid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
