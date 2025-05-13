@@ -8,7 +8,9 @@ function generateCards() {
         for (let i = start; i <= end; i++) {
             const card = document.createElement('div');
             card.className = 'card';
-            card.textContent = i;
+            const span = document.createElement('span');
+            span.textContent = i;
+            card.appendChild(span);
             grid.appendChild(card);
         }
     }
